@@ -1,1 +1,95 @@
-/* Add styles here */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+html, body{
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    background: white;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+}
+
+header{
+    width: 100%;
+    padding: 32px 16px;
+    background: #015551;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 800;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+nav#periods{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 720px;
+    margin: 10px auto;
+}
+
+nav#periods a{
+    padding: 8px 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;;
+}
+
+nav#periods a.active{
+    background: #0155511a;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 720px;
+    margin: 0 10px;
+    max-width: calc(100% - 20px);
+    gap: 10px;
+    user-select: none;
+}
+
+.content{
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 3px;
+    border: 1px solid #01555140;
+    color: #000;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.content img{
+    aspect-ratio: 16/9;
+    width: 100%;
+    pointer-events: none;
+}
+
+.content h1{
+    font-size: 16px;
+    padding: 6px;
+    margin: 0;
+}
+
+.content .buttons{
+    display: flex;
+    flex-flow: row wrap;
+    border-top: 1px solid #0155511a;
+    height: 26px;
+    margin-top: auto;
+    & button{
+        font-family: "Inter", sans-serif;
+        background: none;
+        border: none;
+        border-radius: none;
+        flex-grow: 1;
+        &:not(:last-child){
+            border-right: 1px solid #0155511a;
+        }
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}

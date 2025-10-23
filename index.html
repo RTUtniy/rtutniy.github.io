@@ -1,14 +1,28 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
-</head>
-<body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studiju pieraksti</title>
+    <link href='/style.css' rel='stylesheet'>
+  </head>
+  <body>
+    <header>Studiju pieraksti</header>
+    <nav id="periods">
+      <ul>
+        <li alt="2024 Autumn Period" period_id="2024a">2024 AP</li>
+        <li alt="2025 Spring Period" period_id="2024s">2025 SP</li>
+        <li alt="2025 Autumn Period" period_id="2025a">2025 AP</li>
+      </ul>
+    </nav>
+    <main>
+      <!--Courses-->
+      <!--Vispār tā ir fallback lapa, katram periodam būs sava lapa-->
+      <script>
+        const periods = document.querySelectorAll('#periods li');
+        window.open('https://rtutniy.github.io/' + periods[periods.length-1].getAttribute('period_id'), "_self");
+      </script>
+      <!--Varbūt ir vērts vnk uztaisīt te vispārīgo kursu sarakstu, nesadalīto pa semestriem?..-->
+    </main>
+  </body>
 </html>
