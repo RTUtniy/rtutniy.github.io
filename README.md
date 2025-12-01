@@ -1,1 +1,1 @@
-A simple HTML/JS/CSS starter template
+Just a website for comfort navigation between my RTU labors
