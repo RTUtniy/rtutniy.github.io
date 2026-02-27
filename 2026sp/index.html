@@ -12,16 +12,17 @@
       <a title="2024 Autumn Period" period_id="2024ap" href="/2024ap/">2024 AP</a>
       <a title="2025 Spring Period" period_id="2024sp" href="/2025sp/">2025 SP</a>
       <a title="2025 Autumn Period" period_id="2025ap" href="/2025ap/">2025 AP</a>
-      <a title="2026 Spring Period" period_id="2026sp" href="/2026sp/">2026 SP</a>
+      <a title="2026 Spring Period" period_id="2026sp" class="active">2026 SP</a>
     </nav>
-    <main>
-      <!--Courses-->
-      <!--Vispār tā ir fallback lapa, katram periodam būs sava lapa-->
-      <script>
-        const periods = document.querySelectorAll('#periods li');
-        window.open('https://rtutniy.github.io/' + periods[periods.length-1].getAttribute('period_id'), "_self");
-      </script>
-      <!--Varbūt ir vērts vnk uztaisīt te vispārīgo kursu sarakstu, nesadalīto pa semestriem?..-->
+    <main class="courses">
+      <a class="content" href="./DBVS/">
+        <img src="https://mans.rtu.lv/assets/datorika-B-Eay6U2.png">
+        <h1>Datu bāzu vadības sistēmas</h1>
+      </a>
+      <a class="content" href="./VGPS/">
+        <img src="https://mans.rtu.lv/assets/matematika-Dcf9jZ6z.png">
+        <h1>Varbūtība, gadījuma procesi un statistika inženieriem</h1>
+      </a>
     </main>
   </body>
 </html>
